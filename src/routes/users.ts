@@ -20,7 +20,8 @@ router.get('/:id', async(req, res) => {
 
 // POST /users
 router.post('/', async(req, res) => {
-    const {string: name, string: email} = req.body;
+    const name = req.body.name;
+    const email = req.body.email;
 
     return res.status(201).json('Created');
 });

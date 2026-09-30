@@ -32,6 +32,10 @@ router.post('/', async(req, res) => {
 })
 // PATCH /tickets/:id/status
 
+router.patch('/:id/status', async(req, res) => {
+    updateTicketStatus(Number(req.params.id), req.body.status);
+    return res.status(200).json('OK');
+});
 // TODO: Student implementation - Part 2: Time Log Routes
 // POST /tickets/:id/time
 // GET /tickets/:id/time
