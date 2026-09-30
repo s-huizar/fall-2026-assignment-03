@@ -6,11 +6,17 @@ const router = Router();
 // GET /users
 
 router.get('/', async() => {
+    
+});
+
+// GET /users/:id
+router.get('/:id', async() => {
 
 });
 
-
-// GET /users/:id
 // POST /users
+router.post('/', async() => {
+
+});
 
 export default router;
